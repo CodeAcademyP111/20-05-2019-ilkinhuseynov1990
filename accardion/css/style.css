@@ -1,0 +1,41 @@
+.accordion .accordion1{
+    width: 100%;
+    border:none;
+    padding: 20px;
+    text-align: left;
+    color: rgb(180, 176, 176);
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-bottom: thin solid blue;
+}
+
+.accordion .accordion1:hover{
+    background-color: rgb(194, 194, 194);
+    color: #fff;
+}
+
+.accordion .accordion1:after{
+    content: '\02795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+
+}
+
+.active:after {
+    content: '\2796' !important;
+}
+
+
+.panel{
+    border:1px solid silver;
+    padding: 10px;
+    display: none;
+}
+
+.panelActive{
+    display: block;
+    transition: all 1s;
+}
